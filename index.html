@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="https://bcw.blob.core.windows.net/public/img/9977764104160066">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css"
+    integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <title>vending_machine</title>
+</head>
+
+<body>
+
+  <!-- SECTION -->
+  <header>
+
+    <div class="container-fluid bg-dark bg-gradient">
+      <div class="row m-0 p-0">
+        <div class="col-12 d-flex justify-content-evenly align-items-center text-light p-2">
+          <h1 class="m-0">Welcome to the Vending Machine</h1>
+          <h2 class="border border-light border-2 m-0 rounded p-1">Money: <span id="quartersCount">0</span></h2>
+          <div class="d-flex align-items-center">
+            <p class="fw-bold m-0">Insert Quarters Here <i class="mdi mdi-arrow-right-bold text-light"></i> </p>
+            <button onclick="app.MoneyController.addMoney()"
+              class="btn btn dark border border-2 border-light text-light fw-bold" style="width: 5em;"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <!-- SECTION -->
+
+  <main>
+
+    <section>
+      <div class="container-fluid d-flex m-0 p-0">
+        <div id="foodCatalog" class="row m-0 p-0">
+          <!-- <div class="col-2 m-4">
+            <img class="contain"
+              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=3781&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="image">
+            <div class="d-flex justify-content-evenly bg-dark text-light p-2">
+              <h4>Name:</h4>
+              <h4>Price:</h4>
+              <button onclick="app.FoodController.buyFood()"
+                class="btn btn bg-dark text-light border border-light">Buy</button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div id="myfood" class="container-fluid d-flex m-0 p-0">
+        <div class="row m-0 p-0">
+          <!-- <div class="col-2 m-4">
+          <img class="contain"
+            src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=3781&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="image">
+          <div class="d-flex justify-content-evenly bg-dark text-light p-2">
+            <h4>Name:</h4>
+            <h4>Price:</h4>
+          </div>
+        </div> -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SECTION -->
+  <footer class="bg-dark text-light">
+    <div class="text-center no-select">
+      <p class="mb-0"><small>copywrite©️briden_dafoe</small></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"
+    integrity="sha256-hw7v8jZF/rFEdx1ZHepT4D73AFTHLu/P9kEyrNesRyc=" crossorigin="anonymous"></script>
+
+  <script src="app/App.js" type="module"></script>
+</body>
+
+</html>
